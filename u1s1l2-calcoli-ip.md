@@ -28,18 +28,6 @@
 19 base 10 = 10011 base 2
 ```
 
-## ESADECIMALE
-
-Ci sono 16 simboli che rappresentano i numeri da 0 a 15:
-
-```
-0 1 2 3 4 5 6 7 8 9 A B C D E F
-```
-
-```
-1101 1001 = D9 base 16 (esadecimale)
-```
-
 ## CLASSI DEGLI IP
 
 ```
@@ -132,6 +120,24 @@ gateway2:    00001010.00000000.00000001.00 111110 => 10.0.1.62
 numero host massimo: 2^(32 - 26) -2 = 2^6 - 2 = 62 hosts
 ```
 
+00001010000000000000000100000011 -> 10013
+
+## ESADECIMALE
+
+Ci sono 16 simboli che rappresentano i numeri da 0 a 15:
+
+```
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+```
+
+```
+11011001 -> 1101 1001 -> D9 base 16 esadecimale
+
+11010 -> 0001 1010 -> 1A esadecimale
+
+101101 -> 0010 1101 -> 2D esadecimale
+```
+
 ## INDIRIZZI MAC
 
 ```
@@ -144,5 +150,5 @@ numero host massimo: 2^(32 - 26) -2 = 2^6 - 2 = 62 hosts
 Il computer vede questo:
 
 ```
-000000001010101000010001101110110010001011001100
+000000001010101000010001101110110010001011001100 -> 00AA11BB22CC
 ```
