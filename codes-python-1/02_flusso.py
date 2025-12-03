@@ -1,5 +1,5 @@
 number = input("Inserisci un numero: ")
-if (number.isdigit()):
+if number.isdigit():
     number = int(number)
 
     if number % 2 == 0:
