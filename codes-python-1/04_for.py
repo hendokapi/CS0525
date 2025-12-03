@@ -13,6 +13,7 @@ lista_spesa[2] = 'fragole'
 print(lista_spesa[2])
 lista_spesa.append('pizza')
 print(lista_spesa)
+lista_spesa.insert(1, 'ciao')
 
 print('elementi in lista: ', len(lista_spesa))
 
