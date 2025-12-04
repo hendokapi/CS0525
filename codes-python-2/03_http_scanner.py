@@ -16,7 +16,7 @@ try:
     print('status:', response.status)
 
     body_bytes = response.read()
-    body_string = body_bytes.decode('utf-8')
+    body_string = body_bytes.decode('utf-8', errors='replace')
     print(body_string)
 
     connection.close()
