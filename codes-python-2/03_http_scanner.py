@@ -12,12 +12,12 @@ try:
     connection = http.client.HTTPConnection(host, port)
     connection.request('GET', '/')
     response = connection.getresponse()
-    print(response)
+    # print(response)
     print('status:', response.status)
 
-    body_bytes = response.read()
-    body_string = body_bytes.decode('utf-8', errors='replace')
-    print(body_string)
+    # body_bytes = response.read()
+    # body_string = body_bytes.decode('utf-8', errors='replace')
+    # print(body_string)
 
     connection.close()
 except ConnectionRefusedError:
