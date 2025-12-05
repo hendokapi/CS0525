@@ -50,25 +50,26 @@ n % 15
 
 numbers = int(input('n numeri: '))
 columns = int(input('n colonne: '))
+larghezza = int(input('caratteri x cella: '))
 
-print((columns * 11) * '-') # prima linea di contorno della tabella
+print((columns * (larghezza + 3)) * '-') # prima linea di contorno della tabella
 
 for number in range(1, numbers + 1):
     if (number - 1) % columns == 0:
         print("| ", end='')
 
     if number % 3 == 0 and number % 5 == 0:
-        print(f'{'FizzBuzz':^8}', end='')
+        print(f'{'FizzBuzz':^{larghezza}}', end='')
     elif number % 3 == 0:
-        print(f'{'Fizz':^8}', end='')
+        print(f'{'Fizz':^{larghezza}}', end='')
     elif number % 5 == 0:
-        print(f'{'Buzz':^8}', end='')
+        print(f'{'Buzz':^{larghezza}}', end='')
     else:
-        print(f'{number:^8}', end='')
+        print(f'{number:^{larghezza}}', end='')
 
     # serve a capire quando cambiare riga
     if number % columns == 0:
         print(" |")
-        print((columns * 11) * '-') # linea di separazione tra righe 
+        print((columns * (larghezza + 3)) * '-') # linea di separazione tra righe 
     else:
         print(end=' | ') # separatore tra celle
